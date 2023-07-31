@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Benjamin Yang's Portfolio</title>
+  <link href="css/home.css" rel="stylesheet">
+  <link href="css/navigation.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="custom-cursor"></div>
+
+  <div class="menu">
+    <ul>
+      <li><h3><a href="home.html">HOME</a></h3></li>
+      <li><h3><a href="#interface-design" onclick="smoothScroll(event)">PROJECT</a></h3></li>
+      <li><h3><a href="about.html">ABOUT</a></h3></li>
+      <li><h3><a href="home.html"><img src="images/BY.png" width="57px" alt="brand"></a></h3></li>
+    </ul>
+  </div>
+
+
+
+<div class="Ellipse">
+
+  <div class="ellipse-main">
+  <img src="images/ellipse- main.png" width="1300px" alt="ellipse-main">
+
+  <div class="Intro">
+    <div class="bigTitle"><h1>Hi,</h1></div>
+    <div class="subTitle"><h1> I'm Benjamin</h1></div>
+    <div class="subSubTitle"><h2>a front-end web developer and visual designer currently<br>studying Interactive Arts and Technology at SFU</h2></div>
+</div>
+  </div>
+
+  <div class="ellipse-mid">
+    <div class="ellipse-0">
+    <img src="images/ellipse-mid.png" width="220px" alt="ellipse-mid">
+   </div>
+    <div class="ellipse-1">
+    <img src="images/ellipse-1 .png" width="80px" alt="ellipse-1">
+    </div>
+    <div class="ellipse-2">
+    <img src="images/ellipse-2.png" width="60px" alt="ellipse-2">
+    </div>
+      
+   </div>
+
+  
+
+
+   
+</div>
+
+<div class="Interface-Design" id="interface-design">
+  <div class="interfaceDesign"><h4>Interface Design</h></div>
+
+  <div class="Long-Live-Fashion">
+
+  <div class="right-head-text"><h1>UX|UI, Font-end</h1></div>
+  <div class="left-head-text"><h1>team project at 2022</h1></div>
+  <div class="body-text-llf"><h5>LONG LIVE FASHION</h5></div>
+  <div class="see-more"><a href="Long-Live-Fashion.html"><h3>see more</h3></a></div>
+
+  </div>
+
+  <div class="pokemonGo-carefully">
+    <div class="right-head-text"><h1>HCI, Interface design</h1></div>
+    <div class="left-head-text"><h1>team project at 2022</h1></div>
+    <div class="body-text"><h6>POKEMONGO CAREFULLY</h6></div>
+    <div class="see-more"><a href="okemonGo-carefully.html"><h3>see more</h3></a></div>
+  
+    </div>
+</div>
+
+
+
+
+<div class="footer-container">
+
+  
+</div>
+
+
+<script>
+  // 获取.custom-cursor元素
+  const customCursor = document.querySelector('.custom-cursor');
+  const redAboutImage = document.querySelector('.about-red');
+  const yellowOrangeImage = document.querySelector('.artwork-yellow-orange');
+  const  blueImage = document.querySelector('.runway-blue-purple');
+  const  greenImage = document.querySelector('.tickets-green');
+  // 监听鼠标移动事件
+  document.addEventListener('mousemove', (e) => {
+
+  const scrollX = window.pageXOffset;
+  const scrollY = window.pageYOffset;
+   // 更新.custom-cursor元素的位置与鼠标位置一致
+  customCursor.style.left = `${e.clientX + scrollX}px`;
+  customCursor.style.top = `${e.clientY + scrollY}px`;
+     // 检查鼠标是否位于图片上
+    if (isMouseOverImage(e, redAboutImage) || isMouseOverImage(e, yellowOrangeImage)
+    || isMouseOverImage(e, blueImage)|| isMouseOverImage(e,  greenImage)) {
+      customCursor.classList.add('active');
+    } else {
+      customCursor.classList.remove('active');
+    }
+
+});
+
+
+  // 监听图片的鼠标进入和离开事件
+  redAboutImage.addEventListener('mouseenter', () => {
+    customCursor.classList.add('active');
+  });
+
+  redAboutImage.addEventListener('mouseleave', () => {
+    customCursor.classList.remove('active');
+  });
+
+  yellowOrangeImage.addEventListener('mouseenter', () => {
+    customCursor.classList.add('active');
+  });
+
+  yellowOrangeImage.addEventListener('mouseleave', () => {
+    customCursor.classList.remove('active');
+  });
+
+  // 检查鼠标是否位于图片上
+  function isMouseOverImage(event, image) {
+    const imageRect = image.getBoundingClientRect();
+
+    return (
+      event.clientX >= imageRect.left &&
+      event.clientX <= imageRect.right &&
+      event.clientY >= imageRect.top &&
+      event.clientY <= imageRect.bottom
+    );
+  }
+</script>
+
+
+<div class="custom-gif-cursor">
+  <img src="images/long-live-fashion.gif" width="300px" alt="long-live-fashion.gif">
+</div>
+<script>
+  // 获取.custom-cursor元素和.custom-gif-cursor元素
+  const customGifCursor = document.querySelector('.custom-gif-cursor');
+
+  // 监听鼠标移动事件
+  document.addEventListener('mousemove', (e) => {
+    const scrollX = window.pageXOffset;
+    const scrollY = window.pageYOffset;
+
+    // 更新.custom-cursor元素的位置与鼠标位置一致
+    customCursor.style.left = `${e.clientX + scrollX}px`;
+    customCursor.style.top = `${e.clientY + scrollY}px`;
+    customGifCursor.style.left = `${e.clientX + scrollX}px`;
+    customGifCursor.style.top = `${e.clientY + scrollY}px`;
+  });
+
+  // 获取.Long-Live-Fashion元素
+  const longLiveFashion = document.querySelector('.body-text-llf');
+  // 获取.body-text元素
+  const bodyText = document.querySelector('.body-text');
+
+  // 监听鼠标进入.Long-Live-Fashion元素事件
+  longLiveFashion.addEventListener('mouseenter', () => {
+    // 隐藏默认光标，显示自定义GIF光标
+    customCursor.style.display = 'none';
+    customGifCursor.style.display = 'block';
+
+  });
+
+  // 监听鼠标离开.Long-Live-Fashion元素事件
+  longLiveFashion.addEventListener('mouseleave', () => {
+    // 显示默认光标，隐藏自定义GIF光标
+    customCursor.style.display = 'block';
+    customGifCursor.style.display = 'none';
+
+  });
+</script>
+
+<script>
+  // 使用 JavaScript 实现平滑滚动效果
+  function smoothScroll(event) {
+    event.preventDefault(); // 阻止默认链接跳转行为
+
+    const targetId = event.target.getAttribute('href'); // 获取目标元素的 ID
+
+    // 使用 ScrollIntoView 方法来实现平滑滚动效果
+    document.querySelector(targetId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+</script>
+
+</body>
+</html>
+
