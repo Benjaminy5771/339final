@@ -1,0 +1,212 @@
+body {
+    background-color: #181717;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu {
+width: 100vw;
+position:absolute;
+margin-top: 0rem;
+margin: auto;
+text-align: end;
+transform: translate(-3%, -40%);
+/* border:1px solid wheat; */
+}
+
+/* navigation.css */
+
+.menu ul {
+    list-style: none; 
+    padding: 0; 
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+.menu ul li a {
+    color: white; 
+    text-decoration: none; 
+    display: inline;
+    margin-right: 30px;
+    
+  }
+.menu img{
+  margin-top: -5px;
+  /* border:1px solid wheat; */
+}
+
+
+
+
+
+.Intro {
+  width: 800px;
+  margin-left: 0px;
+  margin-top: 0px;
+  color: white;
+  /* border:1px solid red; */
+  transform: translate(115%, -220%);
+}
+
+.bigTitle,
+.subTitle,
+.subSubTitle 
+{
+display: inline-block;
+vertical-align: middle;
+}
+.bigTitle h1
+{
+font-size: 120px;
+margin-left: 0rem;
+margin-top: 0rem;
+}
+
+.subTitle h1
+{
+font-size: 36px;
+margin-left: 0rem;   
+margin-top: 0rem;
+transform: translate(0%, -100%);
+ }
+      
+.subSubTitle h2
+{
+font-size: 15px;
+margin-left: 0rem;
+margin-top: 0rem;
+transform: translate(-58%, -20%);
+}
+
+
+.ellipse-main{
+    position: absolute;
+    height: 1300px;
+    transform: translate(-30%, -40%);
+    /* border:1px solid wheat; */
+    z-index: -1;
+}
+
+.ellipse-mid{
+  width: 100vw;
+  height: 220px;
+  position: absolute;
+  transform: translate(0%, 250%);
+  /* border:1px solid wheat; */
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ellipse-0{
+  width: 220px;
+  height: 220px;
+  position: relative;
+  transform: translate(20%, 0%);
+  /* border:1px solid wheat; */
+  z-index: 0;
+}
+
+.ellipse-1{
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform: translate(-150%, 70%);
+  /* border:1px solid wheat; */
+  z-index: 0;
+}
+.ellipse-2{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  transform: translate(-250%, 170%);
+  /* border:1px solid wheat; */
+  z-index: 0;
+}
+
+
+
+
+.Interface-Design{
+height: 1000px;
+/* border:1px solid wheat; */
+transform: translate(0%, 100%);
+}
+
+.interfaceDesign h4
+{
+  text-align: center;
+  /* border:1px solid wheat; */
+  font-size: 35px;
+
+}
+
+.Long-Live-Fashion{
+  margin-top: 100px;
+  height: 500px;
+  /* border:1px solid red; */
+}
+
+
+.pokemonGo-carefully{
+  height: 500px;
+  /* border:1px solid red; */
+  position: relative;
+  transform: translate(0%, -40%);
+}
+
+.right-head-text h1
+{
+  width: 400px;
+  text-align: left;
+  /* border:1px solid wheat; */
+  font-size: 35px;
+  position: relative;
+  transform: translate(23%, 0%);
+}
+
+.left-head-text h1
+{
+  width: 400px;
+  text-align: right;
+  /* border:1px solid wheat; */
+  font-size: 35px;
+  position: relative;
+  transform: translate(240%, -145%);
+}
+
+.body-text-llf h5
+{
+text-align: center;
+/* border:1px solid wheat; */
+font-size: 130px;
+position: relative;
+transform: translate(0%, -165%);
+transition:  all 0.3s ease;
+
+}
+.body-text-llf:hover h5 {
+  font-family: 'ABC-Whyte-Reg';
+}
+
+.body-text h6
+{
+text-align: center;
+/* border:1px solid wheat; */
+font-size: 100px;
+position: relative;
+transform: translate(0%, -220%);
+}
+
+
+.see-more h3
+{
+  width: 200px;
+  text-align: right;
+  /* border:1px solid wheat; */
+  font-size: 35px;
+  text-decoration: underline;
+  position: relative;
+transform: translate(570%, -1050%);
+}

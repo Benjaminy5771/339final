@@ -1,0 +1,100 @@
+
+body
+{
+cursor:none;
+}
+
+h1 
+{
+font-family: 'ABC-Whyte-Light';
+font-size: 1rem;
+color: white
+}
+
+h2
+{
+font-family: 'ABC-Whyte-Book';
+font-size: 1rem;
+ color: white
+}
+h3
+{
+font-family: 'ABC-Whyte-Mid';
+font-size: 1rem;
+ color: white
+}   
+
+h4
+{
+font-family: 'ABC-Whyte-Reg';
+font-size: 1rem;
+color: white
+}   
+
+h5
+{
+font-family: 'ABC-Whyte-Thin';
+font-size: 1rem;
+color: white
+}   
+
+h6
+{
+font-family: 'ABC-Whyte-Thin';
+font-size: 1rem;
+color: white
+}   
+
+
+
+
+.custom-cursor {
+    z-index: 9999;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(255, 125, 3, 0.5), rgba(255, 124, 3, 0.5) 50%, transparent 50%);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.15s ease;
+    /* Center the cursor using transform */
+    transform: translate(-50%, -50%);
+  }
+  
+  .custom-cursor.active {
+    /* 当鼠标位于图片上时显示胶囊形状 */
+    z-index: 9999;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    background-color:white;
+  
+  }
+  
+  .custom-cursor.active::after {
+    /* 在胶囊形状中添加“Move”文字 */
+    content: "explore";
+    color: black;
+    font-size: 25px;
+    position: absolute; /* 添加position属性 */
+    top: 50%; /* 调整垂直位置到中心 */
+    left: 50%; /* 调整水平位置到中心 */
+    transform: translate(-50%, -50%); /* 将文字居中 */
+    transition: opacity 0.3s ease; 
+  }
+  
+
+
+  .custom-gif-cursor {
+    position: absolute;
+    pointer-events: none;
+    cursor: none;
+    display: none;
+    z-index: 9999;
+    background-size: cover;
+    background-position: center;
+  }
+

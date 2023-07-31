@@ -1,0 +1,57 @@
+/* 在这里添加你的CSS样式 */
+body {
+  background-color: #181717;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'ABC-Whyte-Reg', sans-serif;
+}
+
+/* 页面内容的容器样式 */
+.Long-Live-Fashion {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border:1px solid wheat; */
+}
+
+/* 图片容器样式 */
+.image-container {
+  width: 800px;
+  position: relative;
+  /* border:1px solid wheat; */
+}
+
+/* 图片样式 */
+.animated-image {
+  margin-left: 400px;
+  margin-bottom: 0px;
+  width: 1000px;
+  height: 650px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s, transform 1s;
+  /* border:1px solid wheat; */
+}
+
+/* 文字说明样式 */
+.image-caption {
+    width: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  transform: translate(20%, -320%);
+  /* border:1px solid wheat; */
+}
+
+/* 动画效果 */
+.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
