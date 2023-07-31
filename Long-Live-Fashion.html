@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Long Live Fashion</title>
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/llf.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 页面内容开始 -->
+  <div class="Long-Live-Fashion">
+    <!-- 图片1 -->
+    <div class="image-container">
+      <img src="images/llf-1.png" alt="Image 1" class="animated-image" >
+      <p class="image-caption">This is a team project, in which I mainly play 
+        the role of animation and Interaction design, as well as later code writing. 
+        This project has supplemented me with a lot of knowledge in graphic design, ux, ui design. 
+        Combined with my existing skills, our team has developed this project very well.</p>
+    </div>
+
+    <!-- 图片2 -->
+    <div class="image-container">
+      <img src="images/llf-2.png" alt="Image 2" class="animated-image">
+      <p class="image-caption">text</p>
+    </div>
+
+    <!-- 图片3 -->
+    <div class="image-container">
+      <img src="images/llf-3.png" alt="Image 3" class="animated-image">
+      <p class="image-caption">text</p>
+    </div>
+  </div>
+  <!-- 页面内容结束 -->
+
+  <!-- JavaScript代码开始 -->
+  <script>
+    // JavaScript代码用于实现动画效果
+    const animatedImages = document.querySelectorAll('.animated-image');
+
+    function checkIfInView() {
+      animatedImages.forEach((image) => {
+        const imagePosition = image.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (imagePosition.top < windowHeight && !image.classList.contains('animated')) {
+          image.classList.add('animated');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkIfInView);
+    window.addEventListener('load', checkIfInView);
+  </script>
+  <!-- JavaScript代码结束 -->
+
+</body>
+</html>
