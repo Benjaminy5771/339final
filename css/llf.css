@@ -169,13 +169,7 @@ th, td {
   transform: translate(-50%, 100%);
 }
 
-.end-content-text {
-  width: 900px;
-  font-size: 15px;
-  color: white;
-  margin: 0px;
-  transform: translate(5%, 70%);
-}
+
 
 .end-content{
   margin-top:0rem;
@@ -183,24 +177,30 @@ th, td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translate(0%,-850%);
+  transform: translate(0%,-300%);
     /* border:1px solid red; */
 }
-
+.end-content-text {
+  width: 900px;
+  font-size: 15px;
+  color: white;
+  margin: 0px;
+  transform: translate(5%, 0%);
+}
 .visit-link {
   font-size: 30px;
   text-decoration: underline; 
   color: white; 
-  transform: translate(180%, 1180%);
+  transform: translate(180%, 100%);
 }
 .back-link {
   font-size: 30px;
   text-decoration: underline; 
   color: white; 
-  transform: translate(-160%, 1000%);
+  transform: translate(-160%, -75%);
 }
 .Arrow-content-image{
-  transform: translate(1100%, 1450%);
+  transform: translate(1100%, 20%);
 }
 
 
