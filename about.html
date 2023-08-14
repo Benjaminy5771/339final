@@ -3,19 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>About Me</title>
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <link href="css/about.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>About Me</h1>
-    <div class="intro">
-      <p>Name: Benjamin Yang</p>
-      <p>Position: Web Developer & Animation Effects Designer</p>
-      <p>Interest: I have a strong passion for creating visually appealing websites with engaging animation effects. My goal is to deliver seamless user experiences and captivating designs.</p>
-      <p>Preferred Employer: I am looking to collaborate with innovative companies that value creativity, cutting-edge technologies, and continuous growth.</p>
-      <p>Contact: Feel free to reach out to me at benjamin.yang@example.com</p>
-      <p>Resume: <a href="####">View my resume</a></p>
+
+  <div class="custom-cursor"></div>
+
+  <div class="menu">
+    <ul>
+      <li><h3><a href="home.html">HOME</a></h3></li>
+      <li><h3><a href="home.html#interface-design">PROJECT</a></h3></li>
+      <li><h3><a href="home.html"><img src="images/BY.png" width="57px" alt="brand"></a></h3></li>
+    </ul>
+  </div>
+
+  <div class="text-container">
+    <div class="text-left">
+      <div class="specail-text"> Benjamin Yang</div>
+      Position: Web Developer & Animation Effects Designer<br><br>
+      Feel free to reach out to me <br>
+      benjamin.yang@gmail.com<br>
+      Resume: <span class="link-text">View my resume</span><br>
+    </div>
+
+    <div class="text-right">
+      I have a strong passion for creating <span class="specail-text">visually 
+      appealing websites</span> with engaging <span class="specail-text">animation 
+      effects.</span> My goal is to deliver seamless user 
+      experiences and captivating designs.
+      <br>
+      <br>
+      I am looking to collaborate with innovative 
+      companies that value creativity, cutting-edge 
+      technologies, and continuous growth.
     </div>
   </div>
+
+  <div class="half-ellipse-container">
+  <img src="images/half-ellipse.png" width="1200px" alt="half-ellipse" class="half-ellipse">
+  </div>
+
+
+  <script>
+    // get.custom-cursor
+    const customCursor = document.querySelector('.custom-cursor');
+  
+    // Listening for mouse movement events
+    document.addEventListener('mousemove', (e) => {
+  
+    const scrollX = window.pageXOffset;
+    const scrollY = window.pageYOffset;
+     // Update the position of the. custom cursor element to match the mouse position
+    customCursor.style.left = `${e.clientX + scrollX}px`;
+    customCursor.style.top = `${e.clientY + scrollY}px`;
+  
+  });
+  </script>
+
+
 </body>
 </html>

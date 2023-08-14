@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>Benjamin Yang's Portfolio</title>
   <link href="css/home.css" rel="stylesheet">
-  <link href="css/navigation.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 
@@ -71,8 +70,8 @@
   <div class="pokemonGo-carefully">
     <div class="right-head-text"><h1>HCI, Interface design</h1></div>
     <div class="left-head-text"><h1>team project at 2022</h1></div>
-    <div class="body-text"><h6>POKEMONGO CAREFULLY</h6></div>
-    <div class="see-more"><a href="okemonGo-carefully.html"><h3>see more</h3></a></div>
+    <div class="body-text-pkg"><h6>POKEMONGO CAREFULLY</h6></div>
+    <div class="see-more"><a href="pokemonGo-carefully.html"><h3>see more</h3></a></div>
   
     </div>
 </div>
@@ -81,117 +80,100 @@
 
 
 <div class="footer-container">
-
-  
+  <img src="images/footer-line.png" alt="footer-line Image" class="footer-line-image">
+  <div class="footer-text">© 2023 Designed & Coded — Benjamin Yang</div>
 </div>
 
 
-<script>
-  // 获取.custom-cursor元素
-  const customCursor = document.querySelector('.custom-cursor');
-  const redAboutImage = document.querySelector('.about-red');
-  const yellowOrangeImage = document.querySelector('.artwork-yellow-orange');
-  const  blueImage = document.querySelector('.runway-blue-purple');
-  const  greenImage = document.querySelector('.tickets-green');
-  // 监听鼠标移动事件
-  document.addEventListener('mousemove', (e) => {
-
-  const scrollX = window.pageXOffset;
-  const scrollY = window.pageYOffset;
-   // 更新.custom-cursor元素的位置与鼠标位置一致
-  customCursor.style.left = `${e.clientX + scrollX}px`;
-  customCursor.style.top = `${e.clientY + scrollY}px`;
-     // 检查鼠标是否位于图片上
-    if (isMouseOverImage(e, redAboutImage) || isMouseOverImage(e, yellowOrangeImage)
-    || isMouseOverImage(e, blueImage)|| isMouseOverImage(e,  greenImage)) {
-      customCursor.classList.add('active');
-    } else {
-      customCursor.classList.remove('active');
-    }
-
-});
-
-
-  // 监听图片的鼠标进入和离开事件
-  redAboutImage.addEventListener('mouseenter', () => {
-    customCursor.classList.add('active');
+ <script>
+    // get.custom-cursor
+    const customCursor = document.querySelector('.custom-cursor');
+  
+    // Listening for mouse movement events
+    document.addEventListener('mousemove', (e) => {
+  
+    const scrollX = window.pageXOffset;
+    const scrollY = window.pageYOffset;
+     // Update the position of the. custom cursor element to match the mouse position
+    customCursor.style.left = `${e.clientX + scrollX}px`;
+    customCursor.style.top = `${e.clientY + scrollY}px`;
+  
   });
+  </script>
 
-  redAboutImage.addEventListener('mouseleave', () => {
-    customCursor.classList.remove('active');
-  });
-
-  yellowOrangeImage.addEventListener('mouseenter', () => {
-    customCursor.classList.add('active');
-  });
-
-  yellowOrangeImage.addEventListener('mouseleave', () => {
-    customCursor.classList.remove('active');
-  });
-
-  // 检查鼠标是否位于图片上
-  function isMouseOverImage(event, image) {
-    const imageRect = image.getBoundingClientRect();
-
-    return (
-      event.clientX >= imageRect.left &&
-      event.clientX <= imageRect.right &&
-      event.clientY >= imageRect.top &&
-      event.clientY <= imageRect.bottom
-    );
-  }
-</script>
 
 
 <div class="custom-gif-cursor">
   <img src="images/long-live-fashion.gif" width="300px" alt="long-live-fashion.gif">
 </div>
-<script>
-  // 获取.custom-cursor元素和.custom-gif-cursor元素
-  const customGifCursor = document.querySelector('.custom-gif-cursor');
 
-  // 监听鼠标移动事件
+<div class="custom-gif-cursor-2">
+  <img src="images/pokemon-go-carefully.gif" width="300px" alt="pokemon-go-carefully.gif">
+</div>
+
+
+<script>
+  const customGifCursor = document.querySelector('.custom-gif-cursor');
+  const customGifCursor2 = document.querySelector('.custom-gif-cursor-2');
+//Listening for mouse movement events
   document.addEventListener('mousemove', (e) => {
     const scrollX = window.pageXOffset;
     const scrollY = window.pageYOffset;
 
-    // 更新.custom-cursor元素的位置与鼠标位置一致
+
     customCursor.style.left = `${e.clientX + scrollX}px`;
     customCursor.style.top = `${e.clientY + scrollY}px`;
     customGifCursor.style.left = `${e.clientX + scrollX}px`;
     customGifCursor.style.top = `${e.clientY + scrollY}px`;
+    customGifCursor2.style.left = `${e.clientX + scrollX}px`;
+    customGifCursor2.style.top = `${e.clientY + scrollY}px`;
+
   });
 
-  // 获取.Long-Live-Fashion元素
-  const longLiveFashion = document.querySelector('.body-text-llf');
-  // 获取.body-text元素
-  const bodyText = document.querySelector('.body-text');
 
-  // 监听鼠标进入.Long-Live-Fashion元素事件
+  const longLiveFashion = document.querySelector('.body-text-llf');
+  const POKEMONGO = document.querySelector('.body-text-pkg h6');
+
   longLiveFashion.addEventListener('mouseenter', () => {
-    // 隐藏默认光标，显示自定义GIF光标
+   //Hide default cursor and display custom GIF cursor
     customCursor.style.display = 'none';
     customGifCursor.style.display = 'block';
+    customGifCursor2.style.display = 'none';
 
   });
 
-  // 监听鼠标离开.Long-Live-Fashion元素事件
+//Listening for Mouse Leaving. Long Live Flash Element Event
   longLiveFashion.addEventListener('mouseleave', () => {
-    // 显示默认光标，隐藏自定义GIF光标
     customCursor.style.display = 'block';
+    customGifCursor.style.display = 'none';
+    customGifCursor2.style.display = 'none';
+
+  });
+
+  POKEMONGO.addEventListener('mouseenter', () => {
+    customCursor.style.display = 'none';
+    customGifCursor.style.display = 'none';
+    customGifCursor2.style.display = 'block';
+
+  });
+
+  POKEMONGO.addEventListener('mouseleave', () => {
+    customCursor.style.display = 'block';
+    customGifCursor2.style.display = 'none';
     customGifCursor.style.display = 'none';
 
   });
-</script>
+
+</script> 
+
 
 <script>
-  // 使用 JavaScript 实现平滑滚动效果
+  //Using JavaScript to achieve smooth scrolling effect
   function smoothScroll(event) {
-    event.preventDefault(); // 阻止默认链接跳转行为
+    event.preventDefault(); 
 
-    const targetId = event.target.getAttribute('href'); // 获取目标元素的 ID
+    const targetId = event.target.getAttribute('href'); 
 
-    // 使用 ScrollIntoView 方法来实现平滑滚动效果
     document.querySelector(targetId).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
