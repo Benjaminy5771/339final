@@ -110,37 +110,53 @@ transform: translate(0%, 100%);
 }
 
 .Long-Live-Fashion{
-  margin-top: 100px;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0%, 0%);
   /* border:1px solid red; */
 }
 
 
 .pokemonGo-carefully{
-  height: 500px;
-  /* border:1px solid red; */
-  position: relative;
-  transform: translate(0%, -40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0%, 0%);
+
 }
 
 .right-head-text h1
 {
+  font-size: 35px;
   width: 400px;
   text-align: left;
   /* border:1px solid wheat; */
-  font-size: 35px;
-  position: relative;
-  transform: translate(23%, 0%);
+  transform: translate(-105%, 100%);
 }
-
 .left-head-text h1
 {
+  font-size: 35px;
   width: 400px;
   text-align: right;
   /* border:1px solid wheat; */
-  font-size: 35px;
   position: relative;
-  transform: translate(240%, -145%);
+  transform: translate(110%, -90%);
+}
+
+
+.see-more h3
+{
+  font-size: 35px;
+  text-decoration: underline;
+  width: 200px;
+  text-align: right;
+  /* border:1px solid wheat; */
+  transform: translate(270%, 0%);
+
 }
 
 .body-text-llf h5
@@ -151,11 +167,15 @@ font-size: 130px;
 position: relative;
 transform: translate(0%, -165%);
 transition:  all 0.3s ease;
-
+}
+.body-text-llf{
+  height: 50px;
+   /* border:1px solid wheat; */
 }
 .body-text-llf:hover h5 {
   font-family: 'ABC-Whyte-Reg';
 }
+
 
 .body-text-pkg h6
 {
@@ -169,17 +189,16 @@ transition:  all 0.3s ease;
 .body-text-pkg:hover h6 {
   font-family: 'ABC-Whyte-Reg';
 }
-
-.see-more h3
-{
-  width: 200px;
-  text-align: right;
+.body-text-pkg{
+  height: 50px;
   /* border:1px solid wheat; */
-  font-size: 35px;
-  text-decoration: underline;
-  position: relative;
-transform: translate(570%, -1050%);
 }
+
+
+
+
+
+
 
 .footer-container {
   margin-top:0rem;
