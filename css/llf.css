@@ -1,57 +1,218 @@
-/* 在这里添加你的CSS样式 */
+
 body {
   background-color: #181717;
   margin: 0;
   padding: 0;
-  color: white;
-  font-family: 'ABC-Whyte-Reg', sans-serif;
 }
 
-/* 页面内容的容器样式 */
-.Long-Live-Fashion {
-  max-width: 1200px;
-  margin: auto;
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* border:1px solid wheat; */
-}
+.menu {
 
-/* 图片容器样式 */
-.image-container {
-  width: 800px;
-  position: relative;
-  /* border:1px solid wheat; */
-}
+  margin-top: 2rem;
 
-/* 图片样式 */
-.animated-image {
-  margin-left: 400px;
-  margin-bottom: 0px;
-  width: 1000px;
-  height: 650px;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 1s, transform 1s;
-  /* border:1px solid wheat; */
-}
+  }
 
-/* 文字说明样式 */
-.image-caption {
-    width: 300px;
+ .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  padding: 10px;
-  font-size: 16px;
-  position: relative;
-  transform: translate(20%, -320%);
-  /* border:1px solid wheat; */
+  width: 100%;
+  height: 700px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1; /* Ensure it's above the GIF */
+ 
 }
 
-/* 动画效果 */
-.animated {
-  opacity: 1;
-  transform: translateX(0);
+.gif-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  transform: translate(0%, 10%);
+}
+
+.text-overlay {
+  font-family: 'ABC-Whyte-Mid';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: black;
+  z-index: 2; /* Ensure it's above the GIF and overlay */
+}
+
+.table-container {
+  position: absolute;
+  top: 70%; /* Adjust this value as needed */
+  left: 50%;
+  transform: translate(-50%, 100%);
+  z-index: 2; /* Ensure it's above the GIF and overlay */
+}
+
+table {
+  border-collapse: collapse;
+  width: 200%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+}
+
+
+.nev-content {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.nev-content-image {
+  transform: translate(-70%, 0%);
+}
+
+.nev-content-text {
+  width: 450px;
+  font-size: 15px;
+  color: white;
+  margin: 0px;
+  transform: translate(60%, 100%);
+}
+
+
+.llf-artwork-content {
+  margin-top:-10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   /* border:1px solid red; */
+}
+.llf-artwork-image{
+  transform: translate(5%, 0%);
+}
+.llf-artwork-text-right{
+  margin-top: 2rem;
+  font-family: 'ABC-Whyte-Mid';
+  width: 350px;
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+  transform: translate(-60%, 0%);
+  
+}
+.llf-artwork-text-left{
+  font-family: 'ABC-Whyte-Book';
+  width: 400px;
+  font-size: 15px;
+  color: white;
+  transform: translate(200%, -70%);
+}
+
+
+.llf-ticket-content {
+  margin-top:0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transform: translate(0%, -45%);
+}
+.llf-ticket-content-image {
+  transform: translate(-50%, 0%);
+}
+
+.llf-ticket-content-text {
+  width: 400px;
+  font-size: 15px;
+  color: white;
+  margin: 0px;
+  transform: translate(70%, 100%);
+}
+
+
+
+
+.llf-code-content {
+  margin-top:0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transform: translate(0%, -100%);
+}
+.llf-code-content-image {
+  transform: translate(70%, 0%);
+}
+.llf-code-content-text {
+  width: 400px;
+  font-size: 15px;
+  color: white;
+  margin: 0px;
+  transform: translate(-50%, 100%);
+}
+.end-content-text {
+  width: 900px;
+  font-size: 15px;
+  color: white;
+  margin: 0px;
+  transform: translate(5%, 50%);
+}
+
+.end-content{
+  margin-top:0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0%,-1150%);
+    /* border:1px solid red; */
+}
+
+.visit-link {
+  font-size: 30px;
+  text-decoration: underline; 
+  color: white; 
+  transform: translate(180%, 1180%);
+}
+.back-link {
+  font-size: 30px;
+  text-decoration: underline; 
+  color: white; 
+  transform: translate(-160%, 1000%);
+}
+.Arrow-content-image{
+  transform: translate(1100%, 1450%);
+}
+
+
+
+.footer-container {
+  margin-top:0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0%,-100%);
+   
+}
+.footer-line-image{
+  height: 4px;
+  width: 100vw;
+  transform: translate(0%, 0%);
+}
+.footer-text {
+  width: 400px;
+  font-size: 15px;
+  color: white;
+  margin: 0px;
+  transform: translate(10%, 30%);
 }

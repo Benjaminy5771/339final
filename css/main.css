@@ -47,6 +47,39 @@ color: white
 
 
 
+.menu {
+  width: 100vw;
+  position:absolute;
+  margin-top: 0rem;
+  margin: auto;
+  text-align: end;
+  transform: translate(-3%, -40%);
+  /* border:1px solid wheat; */
+  }
+  
+  /* navigation.css */
+  
+  .menu ul {
+      list-style: none; 
+      padding: 0; 
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+  .menu ul li a {
+      color: white; 
+      text-decoration: none; 
+      display: inline;
+      margin-right: 30px;
+      
+    }
+  .menu img{
+    margin-top: -5px;
+    /* border:1px solid wheat; */
+  }
+  
+  
+  
 
 .custom-cursor {
     z-index: 9999;
@@ -64,28 +97,6 @@ color: white
     transform: translate(-50%, -50%);
   }
   
-  .custom-cursor.active {
-    /* 当鼠标位于图片上时显示胶囊形状 */
-    z-index: 9999;
-    width: 100px;
-    height: 35px;
-    border-radius: 30px;
-    background-color:white;
-  
-  }
-  
-  .custom-cursor.active::after {
-    /* 在胶囊形状中添加“Move”文字 */
-    content: "explore";
-    color: black;
-    font-size: 25px;
-    position: absolute; /* 添加position属性 */
-    top: 50%; /* 调整垂直位置到中心 */
-    left: 50%; /* 调整水平位置到中心 */
-    transform: translate(-50%, -50%); /* 将文字居中 */
-    transition: opacity 0.3s ease; 
-  }
-  
 
 
   .custom-gif-cursor {
@@ -97,4 +108,16 @@ color: white
     background-size: cover;
     background-position: center;
   }
+
+
+  .custom-gif-cursor-2 {
+    position: absolute;
+    pointer-events: none;
+    cursor: none;
+    display: none;
+    z-index: 9999;
+    background-size: cover;
+    background-position: center;
+  }
+
 
