@@ -9,11 +9,11 @@ body {
 .menu {
   
   margin-top: 2rem;
-
   }
  
   .text-container{
     height: 280px;
+    padding-top: 1rem;
     margin-top:0rem;
     display: flex;
     flex-direction: column;
